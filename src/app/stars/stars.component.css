@@ -1,0 +1,13 @@
+.line
+{background-color: rgb(44, 62, 80);}
+.star{
+    color:  rgb(44, 62, 80);
+}
+.line{
+    height: 4px;
+    width: 80px;
+
+}
+h2{
+    color: #2c3e4f;
+}

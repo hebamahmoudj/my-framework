@@ -1,0 +1,47 @@
+
+
+
+<!-- <div class="container items">
+
+<app-stars [title]="titleportfolio"></app-stars>
+
+    <div class="row g-5">
+      
+      
+<div class="col-lg-4 col-md-3   py-3   align-items-center justify-content-center" *ngFor="let imgs of imgsrc">
+    <img  class="w-100 rounded-5" [src]="imgs" alt="">
+</div>
+
+        
+    </div>
+</div> -->
+
+
+<section class="" >
+    <div class="container products  w-75 items  ">
+      <app-stars [title]="titleportfolio"></app-stars>
+
+    
+    
+      <div class="row g-5  align-items-between justify-content-between border-box  ">
+     
+    
+      <div class="col-md-6 col-12 col-lg-4 rounded-3   "   *ngFor="let imagesrc of imgsrc">
+    <div class="item rounded-3 overflow-hidden position-relative">
+     <img  class="w-100 rounded-3 g-5"[src]="imagesrc" (click)="onImageClick(imagesrc)" alt="">
+    
+      <div class=" position-absolute  plus start-0 w-100 top-0 h-100 rounded-3 d-flex justify-content-center align-items-center"(click)="onImageClick(imagesrc)" ><i class="text-white fa-solid fa-plus fa-6x"></i></div>
+    </div>
+  </div>
+    
+   
+    </div>
+    </div>
+    <div (click)="fade()" *ngIf="clicked==true" class="position-fixed start-0 w-100 top-0 h-100 bg-primary bg-opacity-25 d-flex justify-content-center align-items-center">
+      <img  class="w-25   md-w-50 sm-w-100 justify-content-around  "  alt="" [src]="largimg">
+    </div>
+    
+    </section>
+    <div class="row g-5">
+
+   

@@ -1,0 +1,29 @@
+.items{
+    width:60%
+}
+
+section{
+    box-sizing: border-box;
+  }
+  .plus{
+  
+    background-color: #1abc9ce6!important;
+    opacity: 0;
+    cursor: pointer;
+    transition: .6s opacity;
+ 
+  
+  
+  }
+  .item .plus:hover{
+    opacity:1;
+  
+  
+  }
+  .layer{
+    overflow: hidden!important;
+  
+  }
+
+ 
+  
